@@ -267,6 +267,8 @@ GameObject:
   - component: {fileID: 602836422}
   - component: {fileID: 602836421}
   - component: {fileID: 602836423}
+  - component: {fileID: 602836424}
+  - component: {fileID: 602836425}
   m_Layer: 0
   m_Name: Placers
   m_TagString: Untagged
@@ -314,7 +316,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 375d831cd6f0a1a408d79bbc7f0dabd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BeerPlacer
-  beerPrefab: {fileID: 4966703670231292946, guid: 11d085769e8e97b4e8dc7da5d06e1a45, type: 3}
+  Prefab: {fileID: 4966703670231292946, guid: 11d085769e8e97b4e8dc7da5d06e1a45, type: 3}
+  minimumSecondsToWait: 0
+  maximumSecondsToWait: 0
+--- !u!114 &602836424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 602836420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c2719532d0285e4b818c55a090d7297, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BonePlacer
+  Prefab: {fileID: 1392126557284507134, guid: cb868a22f5240864fb2223b5840b0694, type: 3}
+  minimumSecondsToWait: 0
+  maximumSecondsToWait: 0
+--- !u!114 &602836425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 602836420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 349f22f1a5885d545baa3eaa3afbf5ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PillPlacer
+  Prefab: {fileID: 1999804899955338480, guid: 078327bbf04060f45840212e6c209367, type: 3}
+  minimumSecondsToWait: 0
+  maximumSecondsToWait: 0
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -410,6 +444,8 @@ GameObject:
   - component: {fileID: 912658705}
   - component: {fileID: 912658704}
   - component: {fileID: 912658706}
+  - component: {fileID: 912658708}
+  - component: {fileID: 912658707}
   m_Layer: 0
   m_Name: Corgi
   m_TagString: Untagged
@@ -502,6 +538,79 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8af954a2f8201c4c9516347400ac317, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Corgi
+--- !u!50 &912658707
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 912658703}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 1
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
+--- !u!61 &912658708
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 912658703}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -0.004364729, y: -0.021823823}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.28, y: 1.28}
+    newSize: {x: 1.28, y: 1.28}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1.0617621, y: 1.1665162}
+  m_EdgeRadius: 0
 --- !u!1 &1591889500
 GameObject:
   m_ObjectHideFlags: 0
