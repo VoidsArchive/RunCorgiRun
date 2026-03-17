@@ -3,6 +3,7 @@ using UnityEngine;
 public static class GameParameters
 {
     public static float CorgiMoveSpeed = 5f;
+    public static float CorgiDrunkSeconds = 5f;
     
     public static float PoopSecondsOnScreen = 4f;
     
@@ -17,5 +18,7 @@ public static class GameParameters
     public static float PillSecondsOnScreen = 2f;
     public static float PillMinimumSecondsToWait = 4f;
     public static float PillMaximumSecondsToWait = 6f;
+
     
+
 }
