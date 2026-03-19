@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3335137829614556379}
   - component: {fileID: 8042628301419465636}
   - component: {fileID: 2241338126560140921}
+  - component: {fileID: 1466066447856292020}
   m_Layer: 0
   m_Name: poop
   m_TagString: Untagged
@@ -104,3 +105,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Poop
   secondsOnScreen: 1
+--- !u!114 &1466066447856292020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5342921812071209226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c580d339d9cc0d54d925eebaa422b0f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Moonshine
