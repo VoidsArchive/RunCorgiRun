@@ -269,6 +269,7 @@ GameObject:
   - component: {fileID: 602836423}
   - component: {fileID: 602836424}
   - component: {fileID: 602836425}
+  - component: {fileID: 602836426}
   m_Layer: 0
   m_Name: Placers
   m_TagString: Untagged
@@ -347,6 +348,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PillPlacer
   Prefab: {fileID: 1999804899955338480, guid: 078327bbf04060f45840212e6c209367, type: 3}
+  minimumSecondsToWait: 0
+  maximumSecondsToWait: 0
+--- !u!114 &602836426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 602836420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8ffe4093cdc69446afd81743ad5eb0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MoonshinePlacer
+  Prefab: {fileID: 682647537061603469, guid: 06e8a3b99288a7a469adb17f564a90bf, type: 3}
   minimumSecondsToWait: 0
   maximumSecondsToWait: 0
 --- !u!1 &619394800
