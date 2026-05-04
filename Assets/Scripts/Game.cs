@@ -12,6 +12,13 @@ public class Game : MonoBehaviour
         Ui.ShowStartScreen();
     }
 
+    public bool isPlaying()
+    {
+        //return isGameRunning;
+    }
+    
+    public void init
+    
     public void OnStartButtonClicked()
     {
         Ui.HideStartScreen();
