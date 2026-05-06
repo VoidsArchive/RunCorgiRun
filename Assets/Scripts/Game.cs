@@ -17,7 +17,7 @@ public class Game : MonoBehaviour
         //return isGameRunning;
     }
     
-    public void init
+    //public void init
     
     public void OnStartButtonClicked()
     {
