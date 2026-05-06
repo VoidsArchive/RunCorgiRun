@@ -6,6 +6,7 @@ public class Game : MonoBehaviour
     public UI Ui;
     public GameTimer GameTimer;
     public Corgi Corgi;
+    public Music Music;
     
     public BeerPlacer BeerPlacer;
     public BonePlacer BonePlacer;
@@ -17,6 +18,7 @@ public class Game : MonoBehaviour
     {
         Ui.HideGameOverScreen();
         Ui.ShowStartScreen();
+        Music.PlayMenuMusic();
     }
 
     public bool isPlaying()
@@ -38,6 +40,7 @@ public class Game : MonoBehaviour
         ScoreKeeper.ResetScore();
         Ui.ResetScore();
         Corgi.Reset();
+        Music.PlayGameMusic();
 
     }
 
@@ -59,8 +62,10 @@ public class Game : MonoBehaviour
 
     private void OnTimerFinished()
     {
+        isGameRunning = false;
         Ui.ShowGameOverScreen();
         StopPlacers();
+        Music.PlayMenuMusic();
     }
 
     private void Update()
