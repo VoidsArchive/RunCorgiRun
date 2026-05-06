@@ -167,6 +167,155 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &20766517
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 20766520}
+  - component: {fileID: 20766519}
+  - component: {fileID: 20766518}
+  m_Layer: 0
+  m_Name: Sounds
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &20766518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 20766517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6dff1d9baa89df4fb403c8c95c20a34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Sounds
+  FallingSound: {fileID: 8300000, guid: 6a17ccf65e59b464ea3ef79b8f08bcbb, type: 3}
+  PillSound: {fileID: 8300000, guid: 553a60fe254f0774db0a3be05a08aeed, type: 3}
+  BeerSound: {fileID: 8300000, guid: f4394ded234d59647a0d57d931cbcf7d, type: 3}
+  MoonshineSound: {fileID: 8300000, guid: 4ed8cc9644060374cb90c0b434ed681d, type: 3}
+  PoopSound: {fileID: 8300000, guid: ce4ba70f3cd81a049b5aeee050305d24, type: 3}
+  BoneSound: {fileID: 8300000, guid: eee589c3072609549a09cff0bd054ada, type: 3}
+  audioSource: {fileID: 0}
+--- !u!82 &20766519
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 20766517}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &20766520
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 20766517}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 999.68774, y: 485.19376, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &93047379
 GameObject:
   m_ObjectHideFlags: 0
@@ -700,6 +849,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1dd3330297cf56646a2f0eca24b2f9f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PoopPlacer
+  Sounds: {fileID: 20766518}
   PoopPrefab: {fileID: 5342921812071209226, guid: af0dc2e85a6a4b44d9e354386cf1d474, type: 3}
 --- !u!4 &602836422
 Transform:
@@ -776,6 +926,7 @@ MonoBehaviour:
   Prefab: {fileID: 682647537061603469, guid: 06e8a3b99288a7a469adb17f564a90bf, type: 3}
   minimumSecondsToWait: 0
   maximumSecondsToWait: 0
+  Sounds: {fileID: 20766518}
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -1142,6 +1293,7 @@ MonoBehaviour:
   SoberSprite: {fileID: 21300000, guid: 32dc30187b41db64186693f3198b85e4, type: 3}
   Ui: {fileID: 108489706}
   Game: {fileID: 1793735755}
+  Sounds: {fileID: 20766518}
 --- !u!50 &912658707
 Rigidbody2D:
   serializedVersion: 5
@@ -1731,6 +1883,7 @@ MonoBehaviour:
   GameTimer: {fileID: 875459025}
   Corgi: {fileID: 912658706}
   Music: {fileID: 5745877}
+  Sounds: {fileID: 20766518}
   BeerPlacer: {fileID: 602836423}
   BonePlacer: {fileID: 602836424}
   PillPlacer: {fileID: 602836425}
@@ -2210,3 +2363,4 @@ SceneRoots:
   - {fileID: 663832730}
   - {fileID: 2006241708}
   - {fileID: 5745878}
+  - {fileID: 20766520}

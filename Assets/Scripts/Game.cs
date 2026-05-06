@@ -7,6 +7,7 @@ public class Game : MonoBehaviour
     public GameTimer GameTimer;
     public Corgi Corgi;
     public Music Music;
+    public Sounds Sounds;
     
     public BeerPlacer BeerPlacer;
     public BonePlacer BonePlacer;
@@ -29,6 +30,7 @@ public class Game : MonoBehaviour
     public void OnStartButtonClicked()
     {
         Ui.HideStartScreen();
+        Sounds.PlayPoopSound();
         StartGame();
     }
 
@@ -80,6 +82,7 @@ public class Game : MonoBehaviour
     public void OnPlayAgainButtonClicked()
     {
         Ui.HideGameOverScreen();
+        Sounds.PlayPoopSound();
         StartGame();
     }
 }
