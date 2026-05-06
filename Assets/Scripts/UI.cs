@@ -13,6 +13,11 @@ public class UI : MonoBehaviour
         scoreText.text = "Score: " + score;
     }
 
+    public void ResetScore()
+    {
+        scoreText.text = "Score: 0";
+    }
+
     public void HideStartScreen()
     {
         CanvasGroupDisplayer.Hide(StartScreenCanvasGroup);

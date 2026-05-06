@@ -5,7 +5,14 @@ public class Game : MonoBehaviour
 {
     public UI Ui;
     public GameTimer GameTimer;
+    public Corgi Corgi;
     
+    public BeerPlacer BeerPlacer;
+    public BonePlacer BonePlacer;
+    public PillPlacer PillPlacer;
+    public MoonshinePlacer MoonshinePlacer;
+
+    private bool isGameRunning = false;
     void Start()
     {
         Ui.HideGameOverScreen();
@@ -13,11 +20,9 @@ public class Game : MonoBehaviour
     }
 
     public bool isPlaying()
-    {
-        //return isGameRunning;
+   {
+        return isGameRunning;
     }
-    
-    //public void init
     
     public void OnStartButtonClicked()
     {
@@ -27,17 +32,44 @@ public class Game : MonoBehaviour
 
     private void StartGame()
     {
+       isGameRunning = true;
         GameTimer.StartTimer(10, OnTimerFinished);
+        StartPlacers();
+        ScoreKeeper.ResetScore();
+        Ui.ResetScore();
+        Corgi.Reset();
+
+    }
+
+    private void StartPlacers()
+    {
+        BeerPlacer.StartPlacing();
+        BonePlacer.StartPlacing();
+        PillPlacer.StartPlacing();
+        MoonshinePlacer.StartPlacing();
+    }
+
+    private void StopPlacers()
+    {
+        BeerPlacer.StopPlacing();
+        BonePlacer.StopPlacing();
+        PillPlacer.StopPlacing();
+        MoonshinePlacer.StopPlacing();
     }
 
     private void OnTimerFinished()
     {
         Ui.ShowGameOverScreen();
+        StopPlacers();
     }
 
     private void Update()
     {
-        Ui.ShowTime();
+        if (isGameRunning)
+        {
+           Ui.ShowTime(); 
+        }
+        
     }
 
     public void OnPlayAgainButtonClicked()
