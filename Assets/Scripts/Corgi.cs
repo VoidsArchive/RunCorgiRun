@@ -8,6 +8,7 @@ public class Corgi : MonoBehaviour
     public UI Ui;
     public Game Game;
     public Sounds Sounds;
+    public ParticleSystem BubbleParticles;
     
     private SpriteRenderer spriteRenderer;
     private bool isDrunk = false;
@@ -155,15 +156,20 @@ public class Corgi : MonoBehaviour
     private void GetPlastered()
     {
         isPlastered = true;
-        ChangeToDrunkSprite();
-        StartSoberingUp();
+        Inebriate();
     }
 
     private void GetDrunk()
     {
         isDrunk = true;
+        Inebriate();
+    }
+
+    private void Inebriate()
+    {
         ChangeToDrunkSprite();
         StartSoberingUp();
+        BubbleParticles.Play();
     }
 
     private void StartSoberingUp()
@@ -186,6 +192,7 @@ public class Corgi : MonoBehaviour
         ChangeToSoberSprite();
         isDrunk =  false;
         isPlastered = false;
+        BubbleParticles.Stop();
     }
 
     private void ChangeToSoberSprite()
